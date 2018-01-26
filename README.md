@@ -2,7 +2,8 @@
 
 * **Track:** _Common Core_
 * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
+* **Unidad:** _Reto N° 2_
+* **Unidad:** _Lucero,Margarita,Dayam_
 
 ***
 
@@ -11,44 +12,54 @@ imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
 elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
 
-## Flujo de trabajo
+## PROGRESO
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+A modo orientativo te proponemos los siguientes checklists de progreso para cada semana:
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+SEMANA 1
+- Formar equipo.
+- Elegir reto.
+- Hacer fork de reto modelo o crear nuevo repo si has propuesto un reto no propuesto por Laboratoria.
+- Escribir primera versión del README.md con una descripción general de la librería así como ejemplos (snippets) de uso y configuración (si fuera necesario).
+- Crear issues y milestones que sirvan como hoja de ruta (roadmap)
+- Inicializar proyecto con npm init y git init.
+- Crear index.html con ejemplo principal de uso.
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/cardify.git
-   ```
+SEMANA 2
+- Agregar tests que describan la API de tu librería y los casos de uso esperados.
+- Implementar funcionalidad esencial.
+- Hacer code review con tus compañeras e instructorxs.
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
+SEMANA 3
+- Completar implementación de librería y ejemplo principal (usando la librería).
+- Hacer code review con tus compañeras e instructorxs.
+- Preparar tu demo/presentación.
+- Publicar el ejemplo principal (index.html) en GitHub pages.
 
 > Nota: No olvides que es una buena práctica describir tu proyecto en este
 > archivo `README.md` :smiley:.
 
 ***
 
-## Instalación
+## REQUISITOS
 
-### Global (navegador)
+Todos los retos deben incluir por los menos los siguientes archivos:
 
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
+``` 
+ - README.md con descripción del módulo, instrucciones de instalación, uso y documentación del API.
+ - index.js: Librería debe exportar una función u objeto al entorno global (window) y hacer uso de features de ES6 donde sea apropiado.
+ - index.html: Página web de la librería con ejemplo funcionando.
+ - package.json con nombre, versión, descripción, autores, licencia, dependencias, scripts (pretest, test, ...)
+ - .eslintrc con configuración para linter (ver guía de estilo de JavaScript)
+ - .gitignore para ignorar node_modules u otras carpetas que no deban incluirse en control de versiones (git).
+
+Hacker edition (opcional):
+
+ - Si la librería está dirigida al navegador, debe adherirse al patrón UMD para poder ser usado con AMD, CommonJS y como variable global del navegador.
+   Integración continua con Travis o Circle CI
+
 ```
 
-## Uso
+***
 
-```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
-```
 
-## Ejemplos
-
-...
