@@ -17,11 +17,11 @@ con el texto del atributo `alt` de la imagen.
 
 Para efectos de organización en el trabajo colaborativo se han creado tres ramas en este repositorio. Cada desarrolladora usará la rama asignada para ella de la siguiente manera:
 
-- _[Dayam Llerena](https://github.com/dayamll/cardify)_: [d-plugin](https://github.com/margb13/cardify/tree/d-plugin)
+- _Dayam Llerena_: [d-plugin](https://github.com/margb13/cardify/tree/d-plugin)
 
-- _[Lucero Hospina](https://github.com/lucerohospina/cardify)_: [l-plugin](https://github.com/margb13/cardify/tree/l-plugin)
+- _Lucero Hospina_: [l-plugin](https://github.com/margb13/cardify/tree/l-plugin)
 
-- _[Margarita Sutta](https://github.com/margb13/cardify)_: [m-plugin](https://github.com/margb13/cardify/tree/m-plugin)
+- _Margarita Sutta_: [m-plugin](https://github.com/margb13/cardify/tree/m-plugin)
 
 ## Progreso Propuesto:
 
