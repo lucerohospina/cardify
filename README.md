@@ -3,18 +3,29 @@
 * **Track:** _Common Core_
 * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
 * **Unidad:** _Reto N° 2_
-* **Unidad:** _Lucero,Margarita,Dayam_
+* **Desarrolladoras:** _Dayam Llerema, Lucero Hospina y Margarita Sutta._
 
 ***
+## Descripción General:
 
 Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
 imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
 elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
 
-## PROGRESO
+## Flujo de Trabajo en Equipo:
 
-A modo orientativo te proponemos los siguientes checklists de progreso para cada semana:
+Para efectos de organización en el trabajo colaborativo se han creado tres ramas en este repositorio. Cada desarrolladora usará la rama asignada para ella de la siguiente manera:
+
+- _[Dayam Llerena](https://github.com/dayamll/cardify)_: [d-plugin](https://github.com/margb13/cardify/tree/d-plugin)
+
+- _[Lucero Hospina](https://github.com/lucerohospina/cardify)_: [l-plugin](https://github.com/margb13/cardify/tree/l-plugin)
+
+- _[Margarita Sutta](https://github.com/margb13/cardify)_: [m-plugin](https://github.com/margb13/cardify/tree/m-plugin)
+
+## Progreso Propuesto:
+
+Se nos proponen los siguientes checklists de progreso para cada semana:
 
 SEMANA 1
 - Formar equipo.
@@ -41,7 +52,7 @@ SEMANA 3
 
 ***
 
-## REQUISITOS
+## Requisitos:
 
 Todos los retos deben incluir por los menos los siguientes archivos:
 
@@ -61,5 +72,3 @@ Hacker edition (opcional):
 ```
 
 ***
-
-
