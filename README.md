@@ -13,15 +13,6 @@ imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
 elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
 
-## Flujo de Trabajo en Equipo:
-
-Para efectos de organización en el trabajo colaborativo se han creado tres ramas en este repositorio. Cada desarrolladora usará la rama asignada para ella de la siguiente manera:
-
-- _Dayam Llerena_: [d-plugin](https://github.com/margb13/cardify/tree/d-plugin)
-
-- _Lucero Hospina_: [l-plugin](https://github.com/margb13/cardify/tree/l-plugin)
-
-- _Margarita Sutta_: [m-plugin](https://github.com/margb13/cardify/tree/m-plugin)
 
 ## Progreso Propuesto:
 
@@ -69,6 +60,33 @@ Hacker edition (opcional):
  - Si la librería está dirigida al navegador, debe adherirse al patrón UMD para poder ser usado con AMD, CommonJS y como variable global del navegador.
    Integración continua con Travis o Circle CI
 
+```
+## Flujo de Trabajo en Equipo:
+
+Para efectos de organización en el trabajo colaborativo se han creado tres ramas en este repositorio. Cada desarrolladora usará la rama asignada para ella de la siguiente manera:
+
+- _Dayam Llerena_: [d-plugin](https://github.com/margb13/cardify/tree/d-plugin)
+
+- _Lucero Hospina_: [l-plugin](https://github.com/margb13/cardify/tree/l-plugin)
+
+- _Margarita Sutta_: [m-plugin](https://github.com/margb13/cardify/tree/m-plugin)
+
+## Instrucciones de instalación:
+
+## Global (navegador):
+
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="path-to-cardify.js"></script> 
+```
+
+## Uso:
+
+```
+// `container` es el selector del contenedor donde se buscarán todas las
+
+// imágenes a ser procesadas.
+$(container).cardify({});
 ```
 
 ***
