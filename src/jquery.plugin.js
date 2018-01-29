@@ -2,31 +2,19 @@
 (function($) {
   // $('.container').hide(3000);
 
-  // jQuery le hereda todas sus caracteristicas l nuevo objeto
+  // jQuery le hereda todas sus caracteristicas al nuevo objeto
   $.fn.extend({
     // Nombre del componente
-    plugin: function(userOptions) {
-      // opciones por defecto del componente
-      let initialOptions = {
-        fondo: 'orangered',
-        colorLetra: 'navy',
-        letra: '2rem'
-      };
-      // $.extend() nos permite extender las opciones iniciales
-      // del plugin con las ue posiblemente mande el usuario
-      let opt = $.extend(initialOptions, userOptions);
+    plugin: function() {
+      let $container = $('#hello');
+      let $image = $('#test-img');
 
-      // funcion constructora del plugin
-      function init() {
-        $(this).css({
-          backgroundColor: opt.fondo,
-          color: opt.colorLetra,
-          fontSize: opt.letra
-        });
-      }
-      // ejecuta la funcion constructora por cada elemento que
-      // invoque el componente. 
-      return $(this).each(init);
+      $('#first-btn').on('click', function() {
+        let imageAlt = $image.attr('alt');
+        $image.wrap('<figure class=\'new\'></figure>');
+        $('figure').append(`<figcaption>${imageAlt}</figcaption>`);
+      });
+      // return $(this);
     }
   });
 })(jQuery);
