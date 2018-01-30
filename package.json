@@ -4,10 +4,7 @@
   "description": "* **Track:** _Common Core_\r * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_\r * **Unidad:** _Reto N° 2_\r * **Desarrolladoras:** _Dayam Llerema, Lucero Hospina y Margarita Sutta._",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d public/js"
-  },
-  "scripts": {
-    "build": "babel --presets env src -d public/js"
+    "build": "babel --watch src -d public/js"
   },
   "repository": {
     "type": "git",
