@@ -7,7 +7,7 @@
     "build": "babel src -d dist"
   },
   "scripts": {
-    "build": "babel --presets env src -d dist"
+    "build": "babel --presets env src -d public/js"
   }, 
   "dependencies": {
     "babel-cli": "^6.26.0",
