@@ -1,4 +1,6 @@
-// LLAMANDO AL PLUGIN
+// LLAMANDO AL PLUGIN segun su preferencia:
 $(document).ready(function() {
-  $('.cardify-mode').cardifyStylesBlock();
+  // $('.cardify-mode').cardify();
+  // $('.cardify-mode').cardifyStylesInline();
+  // $('.cardify-mode').cardifyStylesBlock();
 });
