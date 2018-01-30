@@ -72,5 +72,3 @@ Hacker edition (opcional):
 ```
 
 ***
-
-

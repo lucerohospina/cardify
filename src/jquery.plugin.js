@@ -1,20 +1,12 @@
-// funcion anonima autoejecutable
 (function($) {
-  // $('.container').hide(3000);
-
-  // jQuery le hereda todas sus caracteristicas al nuevo objeto
-  $.fn.extend({
-    // Nombre del componente
-    plugin: function() {
-      let $container = $('#hello');
-      let $image = $('#test-img');
-
-      $('#first-btn').on('click', function() {
-        let imageAlt = $image.attr('alt');
-        $image.wrap('<figure class=\'new\'></figure>');
-        $('figure').append(`<figcaption>${imageAlt}</figcaption>`);
-      });
-      // return $(this);
-    }
-  });
+  $.fn.cardify = function() {
+    // Ubicando todas etiquetas img del contenedor con la clase cardify-mode
+    $(this).find('img').each(function() {
+      // Cada etiqueta img tomara como padre una etiqueta figure
+      $(this).wrap('<figure></figure>');
+      // A cada padre de la etiqueta img se le pondra como ultimo hijo una etiqueta figcaption
+      // A cada figcaption se le pondra como texto el atributo de su imagen correspondiente
+      $(this).parent().append($('<figcaption>' + $(this).attr('alt') + '</figcaption>'));
+    });
+  };
 })(jQuery);
