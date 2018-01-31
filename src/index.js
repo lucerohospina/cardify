@@ -85,6 +85,6 @@
 }))(jQuery);
 
 // Funcion hover de las imagenes(figcaption!)
-('img').hover(function () {
+('img').hover(function() {
   $(this).parent().append(`<figure><img src="${$(this).attr('src')}"><figcaption>${$(this).attr('alt')}</figcaption></figure>`);
 });
