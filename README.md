@@ -163,7 +163,7 @@ Para el uso de nuestro plugin **_Cardify_** en tu proyecto debes incluir dos arc
   </body>
   ```
 
-### Usabilidad
+### Uso
 
 Para que el plugin de cardify aplique su funcionalidad, debemos implementar la siguiente línea de código al archivo propio Javascript del proyecto que el usuario haya creado.
 
@@ -200,6 +200,27 @@ La estructura inicial HTML a trabajar es un **contenedor** que contiene todos lo
 
 La estructura HTML del **contenedor** implementando el plugin quedará de la siguiente manera.
 
+``` html
+<div class="container cardify-mode">
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje1.jpg" alt="Relax yourself" class="image-styles-inline"><figcaption class="figcaption-styles-inline">Relax yourself</figcaption></figure>
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje2.jpg" alt="Be Happy" class="image-styles-inline"><figcaption class="figcaption-styles-inline">Be Happy</figcaption></figure>
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje3.jpg" alt="Be Magic" class="image-styles-inline" style="opacity: 1;"><figcaption class="figcaption-styles-inline" style="opacity: 0;">Be Magic</figcaption></figure>
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje4.jpg" alt="Enjoy" class="image-styles-inline" style="opacity: 1;"><figcaption class="figcaption-styles-inline" style="opacity: 0;">Enjoy</figcaption></figure>
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje5.jpg" alt="Thank you :3" class="image-styles-inline"><figcaption class="figcaption-styles-inline">Thank you :3</figcaption></figure>
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje6.jpg" alt="Dont Worry" class="image-styles-inline"><figcaption class="figcaption-styles-inline">Dont Worry</figcaption></figure>
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje7.jpg" alt="Just be Happy" class="image-styles-inline" style="opacity: 1;"><figcaption class="figcaption-styles-inline" style="opacity: 0;">Just be Happy</figcaption></figure>
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje8.jpg" alt="Good Morning Princess" class="image-styles-inline" style="opacity: 1;"><figcaption class="figcaption-styles-inline" style="opacity: 0;">Good Morning Princess</figcaption></figure>
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje9.jpg" alt="Live your Live" class="image-styles-inline"><figcaption class="figcaption-styles-inline">Live your Live</figcaption></figure>
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje10.jpg" alt="Dont Worry" class="image-styles-inline"><figcaption class="figcaption-styles-inline">Dont Worry</figcaption></figure>
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje11.jpg" alt="Be Magic" class="image-styles-inline"><figcaption class="figcaption-styles-inline">Be Magic</figcaption></figure>
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje12.jpg" alt="Thank you :3" class="image-styles-inline"><figcaption class="figcaption-styles-inline">Thank you :3</figcaption></figure>
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje13.jpg" alt="Just be Happy" class="image-styles-inline"><figcaption class="figcaption-styles-inline">Just be Happy</figcaption></figure>
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje14.jpg" alt="Enjoy" class="image-styles-inline"><figcaption class="figcaption-styles-inline">Enjoy</figcaption></figure>
+    <figure class="figure-styles-inline"><img src="../assets/images/paisaje15.jpg" alt="Be Happy" class="image-styles-inline"><figcaption class="figcaption-styles-inline">Be Happy</figcaption></figure>
+  </div>
+```
 ***
 
-* _DEMO_: [d-plugin](https://)
+* _DEMO_: [demo](https://)
+
+![inicializar](public/assets/images/view-index.png)
