@@ -7,10 +7,8 @@
 
 ***
 
-## Descripción General
-
-Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
-imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
+**Cardify** es un plugin de jQuery, que dado un _contenedor_ busca todas las
+imágenes que encuentre dentro del _contenedor_ y reemplaza por un nuevo
 elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
 
@@ -50,10 +48,10 @@ _**SEMANA 2.**_
 
 **_SEMANA 3._**
 
-* [ ] Completar implementación de librería y ejemplo principal (usando la librería).
+* [x] Completar implementación de librería y ejemplo principal (usando la librería).
 * [ ] Hacer code review con tus compañeras e instructorxs.
-* [ ] Preparar tu demo/presentación.
-* [ ] Publicar el ejemplo principal (index.html) en GitHub pages.
+* [x] Preparar tu demo/presentación.
+* [x] Publicar el ejemplo principal (index.html) en GitHub pages.
 
 ***
 
@@ -78,7 +76,7 @@ Todos los retos deben incluir por los menos los siguientes archivos:
 
 ## Desarrollo del plugin
 
-Como sabemos, jQuery es de las más potentes y utilizadas librerías de Javascript, hoy en día reconocida como el propio framework de Javascript que sin duda se caracteriza por las funciones y eventos que implementa en este lenguaje, jQuery nos proporciona gran facilidad al escribir código.
+Como sabemos, jQuery es de las más potentes y utilizadas librerías de Javascript, reconocida como el propio framework de Javascript que se caracteriza por las funciones y eventos que implementa en este lenguaje.
 
 Por lo que consideramos los siguientes puntos para la creación de nuestro plugin:
 
@@ -93,8 +91,8 @@ Hay un patrón generalizado de la nomenclatura de los plugins:
 Lógicamente, siempre debes de incluír la librería jQuery antes del código de extensión.
 
 > Referencias:
-> [Momenclatura del script del plugin](http://javascriptes.com/cul-es-la-convencin-de-nomenclatura-de-nombre-de-file-de-javascript.html)
-> [Momenclatura del script del plugin](http://html5facil.com/tutoriales/como-crear-plugins-para-jquery/)
+> [Momenclatura del script del plugin - Post de investigación 1](http://javascriptes.com/cul-es-la-convencin-de-nomenclatura-de-nombre-de-file-de-javascript.html)
+> [Momenclatura del script del plugin - Post de investigación 2](http://html5facil.com/tutoriales/como-crear-plugins-para-jquery/)
 
 ### II -Inicializar el plugin
 
@@ -104,6 +102,60 @@ La manera de inicializar el plugin de jQuery es básicamente obtener un parámet
 
   ![inicializar](public/assets/images/inicializar.png)
 
+> Otra forma.
+
+  ``` javascript
+    $.fn.cardify = function() {
+    };
+  ```
+
 ### III -Construyendo el plugin
 
 Vamos a crear un método que debe buscar todas las imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>` con el texto del atributo `alt` encapsulados dentro del objeto jQuery. Para ello vamos a usar el método genérico de jQuery llamado each(). Este método ejecuta una función en el contexto de cada elemento encontrado:
+
+  ``` javascript
+    $(this).find('img').each(function() {
+      // Cada etiqueta img tomara como padre una etiqueta figure
+      $(this).wrap('<figure></figure>');
+      // A cada padre de la etiqueta img se le pondra como ultimo hijo una etiqueta figcaption
+      // A cada figcaption se le pondra como texto el atributo de su imagen correspondiente
+      $(this).parent().append($('<figcaption>' + $(this).attr('alt') + '</figcaption>'));
+
+      // hover
+      $(this).hover(function () {
+        $(this).css('opacity', '0');
+        $(this).next().css('display', 'none');
+      }, function () {
+        $(this).css('opacity', '1');
+        $(this).next().css('display', 'block');
+      });
+    });
+  ```
+
+## Guía de uso
+
+Para implementar el uso de nuestro plugin **_Cardify_** en tu proyecto debes incluir dos archivos importantes.
+
+1. `**jquery.cardify.css**` en los que se incluyen los estilos necesarios para la implementación del funcionamiento correcto del plugin.
+
+  ``` html
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Ejemplo de vinculación de la hoja de estilos del plugin cardify -->
+    <link rel="stylesheet" href="ruta_del_archivo/jquery.cardify.css">
+    <title>Document</title>
+  </head>
+  ```
+
+2. `jquery.cardify.js` que es el script donde se ha desarrollado la funcionalidad del plugin.
+
+  ``` html
+  <body>
+    ...
+
+    <!-- Ejemplo de vinculación del archivo js del plugin -->
+    <script src="ruta-del-archivo/jquery.cardify.js"></script>
+  </body>
+  ```
