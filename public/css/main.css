@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -13,38 +13,36 @@ body {
 }
 
 img {
- border-radius: 150px;
- height: 190px;
- width: 200px;
- margin: 15px;
- margin-right: 10px;
+  border-radius: 150px;
+  height: 190px;
+  width: 200px;
+  margin: 15px;
+  margin-right: 10px;
 }
 
 .container {
-  display: flex; /* or inline-flex */
+  display: flex;
+  /* or inline-flex */
   flex-wrap: wrap;
 }
 
 @import "compass/css3";
-
 .flex-container {
   padding: 0;
   margin: 0;
   list-style: none;
-
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
 
 .flex-item {
   margin-top: 20px;
-  
+  margin-left: 90px;
   line-height: 150px;
   color: white;
   font-weight: bold;
