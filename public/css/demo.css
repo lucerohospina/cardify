@@ -1,7 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+/* ESTILO DE LOS DEMOS HTML */
 
 body {
   background: url(../assets/images/space.gif);
@@ -28,3 +25,13 @@ body {
 figcaption {
   color: #fff
 }
+
+/* footer {
+  width: 100%;
+}
+
+.footer-row {
+  padding: 10px;
+  font-weight: 600;
+  
+} */
