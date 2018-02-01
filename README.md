@@ -14,7 +14,7 @@ con el texto del atributo `alt` de la imagen.
 
 ***
 
-## Flujo de Trabajo en Equipo
+## Flujo de trabajo en equipo
 
 Para efectos de organización en el trabajo colaborativo se han creado tres ramas en este repositorio. Cada desarrolladora usará la rama asignada para ella de la siguiente manera:
 
@@ -26,7 +26,7 @@ Para efectos de organización en el trabajo colaborativo se han creado tres rama
 
 ***
 
-## Progreso Propuesto
+## Progreso propuesto
 
 Se nos proponen los siguientes checklists de progreso para cada semana:
 
@@ -91,7 +91,7 @@ Hay un patrón generalizado de la nomenclatura de los plugins:
 Lógicamente, siempre debes de incluír la librería jQuery antes del código de extensión.
 
 > Referencias:
-> [Momenclatura del script del plugin - Post de investigación 1](http://javascriptes.com/cul-es-la-convencin-de-nomenclatura-de-nombre-de-file-de-javascript.html)
+> [Momenclatura del script del plugin - Post de investigación 1](http://javascriptes.com/cul-es-la-convencin-de-nomenclatura-de-nombre-de-file-de-javascript.html), 
 > [Momenclatura del script del plugin - Post de investigación 2](http://html5facil.com/tutoriales/como-crear-plugins-para-jquery/)
 
 ### II -Inicializar el plugin
@@ -102,7 +102,7 @@ La manera de inicializar el plugin de jQuery es básicamente obtener un parámet
 
   ![inicializar](public/assets/images/inicializar.png)
 
-> Otra forma.
+ Otra manera de inicializar.
 
   ``` javascript
     $.fn.cardify = function() {
@@ -131,12 +131,15 @@ Vamos a crear un método que debe buscar todas las imágenes que encuentre dentr
       });
     });
   ```
+***
 
 ## Guía de uso
 
-Para implementar el uso de nuestro plugin **_Cardify_** en tu proyecto debes incluir dos archivos importantes.
+### Implementacion del plugin Cardify a un proyecto
 
-1. `**jquery.cardify.css**` en los que se incluyen los estilos necesarios para la implementación del funcionamiento correcto del plugin.
+Para el uso de nuestro plugin **_Cardify_** en tu proyecto debes incluir dos archivos importantes.
+
+1. `jquery.cardify.css` en los que se incluyen los estilos necesarios para la implementación del funcionamiento correcto del plugin.
 
   ``` html
   <head>
@@ -144,7 +147,7 @@ Para implementar el uso de nuestro plugin **_Cardify_** en tu proyecto debes inc
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Ejemplo de vinculación de la hoja de estilos del plugin cardify -->
-    <link rel="stylesheet" href="ruta_del_archivo/jquery.cardify.css">
+    <link rel="stylesheet" href="ruta-del-archivo/jquery.cardify.css">
     <title>Document</title>
   </head>
   ```
@@ -159,3 +162,44 @@ Para implementar el uso de nuestro plugin **_Cardify_** en tu proyecto debes inc
     <script src="ruta-del-archivo/jquery.cardify.js"></script>
   </body>
   ```
+
+### Usabilidad
+
+Para que el plugin de cardify aplique su funcionalidad, debemos implementar la siguiente línea de código al archivo propio Javascript del proyecto que el usuario haya creado.
+
+``` javascript
+// seleccionamos al contenedor que tenga la clase y luego que aplica la funcionalidad de cardify
+$('.cardify-mode').cardify();
+```
+
+Este se aplicara de manera que buscara todos los elementos (`<img>`) que se encuentre dentro del **contenedor** con clase `.cardify-mode` , envolviendo cada imagen en un `<figure>` y añadiendo el `<figcaption>` con el texto del atributo alt de cada elemento (`<img>`).
+
+### Ejemplo
+
+La estructura inicial HTML a trabajar es un **contenedor** que contiene todos los elementos (`<img>`).
+
+``` html
+  <div class="container cardify-mode" id="hello">
+    <img src="assets/images/paisaje1.jpg" alt="Relax yourself" title="Live the paradise">
+    <img src="assets/images/paisaje2.jpg" alt="Be Happy" title="Live the paradise">
+    <img src="assets/images/paisaje3.jpg" alt="Be Magic" title="Live the paradise">
+    <img src="assets/images/paisaje4.jpg" alt="Enjoy" title="Live the paradise">
+    <img src="assets/images/paisaje5.jpg" alt="Thank you :3" title="Live the paradise">
+    <img src="assets/images/paisaje6.jpg" alt="Dont Worry" title="Live the paradise">
+    <img src="assets/images/paisaje7.jpg" alt="Just be Happy" title="Live the paradise">
+    <img src="assets/images/paisaje8.jpg" alt="Good Morning Princess" title="Live the paradise">
+    <img src="assets/images/paisaje9.jpg" alt="Live your Live" title="Live the paradise">
+    <img src="assets/images/paisaje10.jpg" alt="Dont Worry" title="Live the paradaise">
+    <img src="assets/images/paisaje11.jpg" alt="Be Magic" title="Live the paradaise">
+    <img src="assets/images/paisaje12.jpg" alt="Thank you :3" title="Live the paradaise">
+    <img src="assets/images/paisaje13.jpg" alt="Just be Happy" title="Live the paradaise">
+    <img src="assets/images/paisaje14.jpg" alt="Enjoy" title="Live the paradaise">
+    <img src="assets/images/paisaje15.jpg" alt="Be Happy" title="Live the paradaise">
+  </div>
+```
+
+La estructura HTML del **contenedor** implementando el plugin quedará de la siguiente manera.
+
+***
+
+* _DEMO_: [d-plugin](https://)
