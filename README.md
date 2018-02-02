@@ -219,6 +219,7 @@ La estructura HTML del **contenedor** implementando el plugin quedará de la sig
     <figure class="figure-styles-inline"><img src="../assets/images/paisaje15.jpg" alt="Be Happy" class="image-styles-inline"><figcaption class="figcaption-styles-inline">Be Happy</figcaption></figure>
   </div>
 ```
+
 ***
 
 * _DEMO_: [demo](https://margb13.github.io/cardify/public/)
