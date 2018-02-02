@@ -8,18 +8,18 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   height: 50vh;
+  width: 100%;
 }
 
 .title {
   color: white;
-  text-align: center;
-  padding-top: 110px;
   font-size: 100px;
   font-family: 'Berkshire Swash', cursive;
   font-family: 'Raleway', sans-serif;
   font-family: 'Oswald', sans-serif;
+  padding-top: 110px;
+  text-align: center;
 }
 
 .white {
@@ -58,22 +58,22 @@ a {
 }
 
 .footer {
-  bottom: 0;
-  width: 100%;
-  line-height: 40px;
   background-color: #f8f9fa;
+  bottom: 0;
+  line-height: 40px;
+  width: 100%;
 }
 
 pre {
+  background-color: rgba(223, 223, 76, 0.03);
   border: 3px solid rgba(123, 21, 133, 0.418);
   border-radius: 4px;
   color: rgb(15, 13, 13);
+  line-height: 24px;
   padding: 5px 8px;
   margin: 0 0 20px;
-  word-wrap: normal;
   overflow-x: auto;
-  line-height: 24px;
-  background-color: rgba(223, 223, 76, 0.03);
+  word-wrap: normal;
 }
 
 .txt-size-card {
@@ -98,18 +98,18 @@ pre {
 
 @media (min-width: 992px) {
   main {
-    min-height: 100vh;
-    position: relative;
     background: linear-gradient(to bottom right, rgb(158, 5, 99), rgb(141, 90, 23));
+    min-height: 100vh;
+    position: relative; 
   }
 
   .firstSection {
-    width: 100%;
     height: 32vh;
+    width: 100%;
   }
   
   .title {
-    padding-top: 60px;
     font-size: 100px;
+    padding-top: 60px;
   }
 }
