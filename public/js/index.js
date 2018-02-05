@@ -1,6 +1,5 @@
 $(document).ready(function() {
-
-  $('#btn-github').on('click', function () {
+  $('#btn-github').on('click', function() {
     $(location).attr('href', 'https://github.com/margb13/cardify');
   });
   
